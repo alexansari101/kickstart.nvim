@@ -41,7 +41,6 @@ vim.keymap.set("n", "<leader>sk", require("telescope.builtin").keymaps, { desc =
 
 -- [[ Telescope configuration]]
 require("telescope.config").values.path_display = { "truncate" }
--- pcall(require("telescope").load_extension, "fzf")
 
 vim.g.vimwiki_list = { { path = "~/Documents/vimwiki/", syntax = "markdown", ext = ".md" } }
 
