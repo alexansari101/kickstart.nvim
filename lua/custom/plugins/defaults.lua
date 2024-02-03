@@ -16,6 +16,8 @@ vim.opt.wildignore:append({
 -- vim.cmd("hi SpellBad cterm=underline")
 -- -- Set style for gvim
 -- vim.cmd("hi SpellBad gui=undercurl")
+vim.opt.spelllang = 'en_us'
+vim.opt.spell = true
 
 -- -- Use treesitter for code folding
 -- vim.o.foldmethod = "expr"
@@ -31,7 +33,6 @@ vim.keymap.set(
 	"<cmd>cd %:p:h<cr><cmd>pwd<cr>",
 	{ desc = "[C]hange CWD to [d]irectory of the open buffer." }
 )
--- vim.keymap.set("n", "<leader>ss", "<cmd>setlocal spell!<cr>", { desc = "[S]et/unset buffer local [s]pell checker." })
 vim.keymap.set("n", "<leader>sc", require("telescope.builtin").command_history, { desc = "[S]earch [C]ommand history" })
 vim.keymap.set("n", "<leader>sk", require("telescope.builtin").keymaps, { desc = "[S]earch [K]eymaps" })
 
