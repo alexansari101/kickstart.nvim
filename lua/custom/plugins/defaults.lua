@@ -24,7 +24,7 @@ vim.opt.spell = true
 vim.o.foldmethod = "expr"
 vim.o.foldexpr = "nvim_treesitter#foldexpr()"
 vim.o.foldcolumn="1"
-vim.o.foldlevel = "20"
+vim.o.foldlevel=20
 -- vim.o.foldenable = false --Disable folding at startup
 
 -- [[ Additional keymaps ]]
