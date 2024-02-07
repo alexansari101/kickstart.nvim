@@ -20,7 +20,7 @@ return {
 		},
 	},
 
-	"vimwiki/vimwiki",
+	-- "vimwiki/vimwiki",
 	{
 		"windwp/nvim-autopairs",
 		-- Optional dependency

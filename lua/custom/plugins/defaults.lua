@@ -23,8 +23,8 @@ vim.opt.spell = true
 -- OR use treesitter for code folding
 vim.o.foldmethod = "expr"
 vim.o.foldexpr = "nvim_treesitter#foldexpr()"
-vim.o.foldcolumn="1"
-vim.o.foldlevel=20
+vim.o.foldcolumn = "1"
+vim.o.foldlevel = 20
 -- vim.o.foldenable = false --Disable folding at startup
 
 -- [[ Additional keymaps ]]
@@ -45,6 +45,6 @@ vim.keymap.set("n", "<leader>sk", require("telescope.builtin").keymaps, { desc =
 -- [[ Telescope configuration]]
 require("telescope.config").values.path_display = { "truncate" }
 
-vim.g.vimwiki_list = { { path = "~/Documents/vimwiki/", syntax = "markdown", ext = ".md" } }
+-- vim.g.vimwiki_list = { { path = "~/Documents/vimwiki/", syntax = "markdown", ext = ".md" } }
 
 return {}
