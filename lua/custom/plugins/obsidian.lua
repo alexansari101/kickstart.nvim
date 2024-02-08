@@ -23,6 +23,11 @@ return {
 		-- 'nvim-telescope/telescope.nvim',
 		-- 'nvim-treesitter/nvim-treesitter',
 	},
+	-- Key mappings that will also load the plugin if not loaded.
+	keys = {
+		{ "<leader>sn", "<cmd>ObsidianQuickSwitch<cr>", desc = "[S]earch for [n]ote." },
+		{ "<leader>nn", "<cmd>ObsidianNew<cr>",         desc = "Create a [n]ew [n]ote." },
+	},
 	opts = {
 		workspaces = {
 			{
@@ -44,9 +49,6 @@ return {
 			-- A map for custom variables, the key should be the variable and the value a function
 			substitutions = {},
 		},
-
-		-- configure key mappings elsewhere.
-		mappings = {},
 
 		-- Customize how names/IDs for new notes are created.
 		note_id_func = function(title)
