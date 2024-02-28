@@ -25,7 +25,7 @@ return {
   },
   -- Key mappings that will also load the plugin if not loaded.
   keys = {
-    { '<leader>sn', '<cmd>ObsidianQuickSwitch<cr>', desc = '[S]earch for [n]ote.' },
+    { '<leader>so', '<cmd>ObsidianQuickSwitch<cr>', desc = '[S]earch [O]bsidian for note.' },
     { '<leader>nn', '<cmd>ObsidianNew<cr>', desc = 'Create a [n]ew [n]ote.' },
   },
   opts = {
